@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'daftaranak',
     loadChildren: () => import('./daftaranak/daftaranak.module').then( m => m.DaftaranakPageModule)
+  },
+  {
+    path: 'kehadiran',
+    loadChildren: () => import('./kehadiran/kehadiran.module').then( m => m.KehadiranPageModule)
   }
 ];
 @NgModule({

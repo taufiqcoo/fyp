@@ -1,6 +1,11 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-title>Penjaga</ion-title>
+      <ion-buttons  slot="end">
+      <ion-button [routerLink]="['/tabs']" color="light" >
+        <ion-icon  name="log-out-sharp" class="btm" ></ion-icon>
+      </ion-button>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -31,9 +36,9 @@
         </ion-select>
       </ion-item>
   
-      <ion-item lines="full" >
-        <ion-label position="floating">Kata Laluan</ion-label>
-        <ion-input type="password" required></ion-input>
+      <ion-item>
+        <ion-label> Tarikh & Masa</ion-label>
+        <ion-datetime displayFormat="DD / MM / YYYY HH:mm " min="2021" placeholder="Tarikh"></ion-datetime>
       </ion-item>
   
       <ion-row>
