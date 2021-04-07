@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController} from '@ionic/angular'
 
 @Component({
   selector: 'app-daftarpenjaga',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DaftarpenjagaPage implements OnInit {
 
-  constructor() { }
+  constructor(public toastController: ToastController) {
+
+   }
+   async openToast() {
+     const toats = await this.toastController.create({
+       message: ' dah siap.',
+       duration: 2000
+     });
+     toats.present();
+   }
 
   ngOnInit() {
   }

@@ -2,6 +2,7 @@
   <ion-toolbar color="primary">
     <ion-title>PENJAGA</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
@@ -9,4 +10,43 @@
     <div class="header">
       <h1>DAFTAR PENJAGA </h1>
     </div>
+
+    <form>
+      <ion-item lines="full">
+        <ion-label position="floating">Nama</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+  
+      <ion-item lines="full">
+        <ion-label position="floating">No Tel</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+  
+      <ion-item lines="full">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="text" required></ion-input>
+      </ion-item>
+  
+      <ion-item lines="full" >
+        <ion-label position="floating">Kata Laluan</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+  
+      <ion-row>
+        <ion-col  class="ion-text-center">
+          <ion-button type="submit" color="primary" shape="round" (click)="openToast()">Sign Up</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <ion-toolbar>
+      <ion-buttons  slot="start">
+        <ion-button [routerLink]="['/tabs']" color="secondary" >
+          <ion-icon  name="arrow-back-circle-sharp" class="btm" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
 </ion-content>
+
