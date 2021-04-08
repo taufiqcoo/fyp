@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'kehadiran',
     loadChildren: () => import('./kehadiran/kehadiran.module').then( m => m.KehadiranPageModule)
+  },
+  {
+    path: 'penjaga',
+    loadChildren: () => import('./penjaga/penjaga.module').then( m => m.PenjagaPageModule)
   }
 ];
 @NgModule({

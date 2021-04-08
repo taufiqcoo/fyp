@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>PENJAGA</ion-title>
+      <ion-buttons  slot="end">
+      <ion-button [routerLink]="['/tabs']" color="light" >
+        <ion-icon  name="log-out-sharp" class="btm" ></ion-icon>
+      </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <br><br><br><br><br><br><br>
+      <ion-button [routerLink]="['/daftaranak']"  color="success" expand="block" size="large" shape="round" >Hantar</ion-button>
+    
+  <br>
+  <br>
+    <section>
+      <ion-button [routerLink]="['/kehadiran']" color="danger" expand="block" size="large" shape="round">Pulang</ion-button>
+    </section>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <ion-toolbar>
+      <ion-buttons  slot="secondary">
+        <ion-button [routerLink]="['/tabs']"  >
+          <ion-icon  name="arrow-back-circle-sharp" class="arrow" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-content>
+
+

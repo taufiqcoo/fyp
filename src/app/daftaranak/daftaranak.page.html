@@ -43,8 +43,22 @@
   
       <ion-row>
         <ion-col  class="ion-text-center">
-          <ion-button type="submit" color="primary" shape="round" (click)="openToast()">DAFTAR</ion-button>
+          <ion-button type="submit" color="success" shape="round" (click)="openToast()">DAFTAR</ion-button>
         </ion-col>
       </ion-row>
     </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <ion-toolbar>
+      <ion-buttons  slot="secondary">
+        <ion-button [routerLink]="['/penjaga']"  >
+          <ion-icon  name="arrow-back-circle-sharp" class="btm" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons  slot="start">
+        <ion-button [routerLink]="['/penjaga']"  >
+          <ion-icon  name="home-sharp" class="btm" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
 </ion-content>
